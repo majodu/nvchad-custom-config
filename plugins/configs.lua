@@ -16,7 +16,6 @@ M.nvimtree = {
       require_confirm = true,
     },
     open_on_setup = true,
-    nvim_tree_auto_open = true,
     git = {
         enable = true
     },
