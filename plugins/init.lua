@@ -1,8 +1,6 @@
 return {
-    ["NvChad/nvterm"] = {
-        config = function()
-            require "plugins.configs.nvterm"
-        end
+    ["goolord/alpha-nvim"] = {
+        disable = false
     },
     ["lepture/vim-jinja"] = {},
     ["sbdchd/neoformat"] = {},

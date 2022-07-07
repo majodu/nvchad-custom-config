@@ -15,11 +15,9 @@ M.nvimtree = {
       cmd = "trash-put",
       require_confirm = true,
     },
-    open_on_setup = true,
     git = {
         enable = true
     },
-    open_on_setup_file = true,
     view = {
         -- side = "right",
         width = 30

@@ -2,7 +2,6 @@
 
 local M = {}
 local pluginConfs = require "custom.plugins.configs"
-M.mappings = require "custom.mappings"
 
 
 
@@ -14,4 +13,5 @@ M.plugins = {
       ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
    },
 }
+M.mappings = require "custom.mappings"
 return M
