@@ -2,7 +2,7 @@ return {
     ["goolord/alpha-nvim"] = {
         disable = false
     },
-    ["lepture/vim-jinja"] = {},
+    -- ["lepture/vim-jinja"] = {},
     ["sbdchd/neoformat"] = {},
     ["rmagatti/auto-session"] = {
         config = function()
