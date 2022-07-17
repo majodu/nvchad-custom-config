@@ -3,7 +3,7 @@ return {
         disable = false
     },
     -- ["lepture/vim-jinja"] = {},
-    ["sbdchd/neoformat"] = {},
+    -- ["sbdchd/neoformat"] = {},
     ["rmagatti/auto-session"] = {
         config = function()
             require("auto-session").setup {
@@ -12,6 +12,8 @@ return {
         end
     },
     ["windwp/nvim-ts-autotag"] = {
+        ft = { "html"},
+        after = "nvim-treesitter",
         config = function()
             require("nvim-ts-autotag").setup {enable = true}
         end
@@ -28,5 +30,12 @@ return {
                 }
             )
         end
-    }
+    },
+      -- format & linting
+   ["jose-elias-alvarez/null-ls.nvim"] = {
+      after = "nvim-lspconfig",
+      config = function()
+         require "custom.plugins.null-ls"
+      end,
+   },
 }

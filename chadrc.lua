@@ -14,7 +14,9 @@ M.plugins = {
     override = {
         ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter,
         ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree
-    }
+    },
+
+
 }
 -- M.mappings = require "custom.mappings"
 return M
