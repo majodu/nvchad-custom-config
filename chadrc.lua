@@ -8,15 +8,14 @@ M.plugins = {
     user = require "custom.plugins",
     options = {
         lspconfig = {
-            setup_lspconf = "custom.plugins.lspconfig"
-        }
+            setup_lspconf = "custom.plugins.lspconfig",
+        },
     },
     override = {
         ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter,
-        ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree
+        ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
+        ["williamboman/mason.nvim"] = pluginConfs.mason,
     },
-
-
 }
 -- M.mappings = require "custom.mappings"
 return M

@@ -8,8 +8,15 @@ opt.softtabstop = 4
 -- opt.foldmethod = "indent"
 opt.smartindent = true
 opt.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- vim.o.foldcolumn = '1'
+
+-- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
+-- vim.keymap.set('n', 'zR', require('ufo').openAllFolds())
+-- vim.keymap.set('n', 'zM', require('ufo').closeAllFolds())
 -- g.javaScript_fold = 1
 vim.api.nvim_set_keymap('n', '<c-g>', '<CMD>lua require("FTerm").toggle()<CR>' , {noremap=false})
 vim.api.nvim_set_keymap('t', '<c-g>', [[<C-\><C-N><CMD>lua require("FTerm").toggle()<CR>]] , {noremap=false,silent=true})
